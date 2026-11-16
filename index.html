@@ -75,7 +75,7 @@ h2{font-size:24px;font-weight:800;margin-bottom:6px}
 .mhead{display:grid;grid-template-columns:150px 1fr;gap:12px;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
 .mhead div:last-child{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
 .marks .foot{font-size:14px;color:var(--muted);margin:4px 0 0}
-@media (max-width:520px){.mrow,.mhead{grid-template-columns:96px 1fr}.mlabel{font-size:13px}}
+@media (max-width:520px){.mrow,.mhead{grid-template-columns:96px 1fr}.mlabel{font-size:13px}.bar i{width:calc(var(--w) * .55)}.bar span{padding-left:calc(var(--w) * .55 + 5px)}}
 
 /* Filters */
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
@@ -138,7 +138,7 @@ footer .copy{font-family:var(--display);font-weight:800;font-size:16px;color:var
   <div class="kicker">A guide for parents · Year 4 to Year 6</div>
   <h1>Competitions that count for <mark>PAJSK</mark> in 2027</h1>
   <p class="lede">The primary-school competitions that have earned PAJSK co-curricular marks before. For each one: when to register, what it costs, the categories, and how many pupils a team needs.</p>
-  <div class="meta"><span>Prepared by <b>Aizat binti Anuar</b></span><span>Last checked <b class="num">12 Nov 2026</b></span><span>14 competitions and programmes</span></div>
+  <div class="meta"><span>Prepared by <b>Aizat binti Anuar</b></span><span>Last checked <b class="num">16 Nov 2026</b></span><span>14 competitions and programmes</span></div>
   <div><a class="go" href="PAJSK-Competitions-2027.pdf" download>Download the PDF version <span aria-hidden="true">↓</span></a></div>
 </div>
 </header>
@@ -149,9 +149,9 @@ footer .copy{font-family:var(--display);font-weight:800;font-size:16px;color:var
   <div class="act">
     <h2 id="act">Act in the next few weeks</h2>
     <ul>
-      <li><b>Kangaroo Math, Kancil Science and Beaver</b> usually open early-bird registration in late November. Ask your child's class or maths teacher whether the school is registering. Individual sign-up is not allowed.</li>
-      <li><b>English contests (Hippo, EsBee, SIL)</b> run from February to May, and their early birds open around the end of the year.</li>
-      <li><b>MIIX 2027</b> (innovation expo, teams) is already open until 30 Apr 2027.</li>
+      <li><b>Kangaroo Math, Kancil Science and Beaver</b>: 2027 registration is not open yet (as of 16 Nov), but early bird usually opens in late November. Ask your child's class or maths teacher whether the school is registering. Individual sign-up is not allowed.</li>
+      <li><b>ESBee 2027</b> (spelling) registration opens 1 Dec 2026. <b>TeenEagle</b> closes 7 Feb 2027, so decide in December.</li>
+      <li><b>IRISE 2027</b> closes 28 Jan 2027; <b>MIIX 2027</b> is open until 30 Apr 2027 (innovation expos, teams).</li>
     </ul>
   </div>
 </section>
@@ -182,7 +182,7 @@ footer .copy{font-family:var(--display);font-weight:800;font-size:16px;color:var
 
 <section aria-labelledby="list">
   <h2 id="list">The competitions</h2>
-  <p class="sec-sub">Most 2027 dates aren't announced yet. Each card shows the <b>2026 dates and fees</b>, with the <span style="color:var(--accent);font-weight:600">expected 2027 window</span> in blue. Fees may rise slightly. Always confirm on the organiser's site. Tap a competition's name or its button to open the official page.</p>
+  <p class="sec-sub">Some 2027 dates are now confirmed and are marked "confirmed". Other cards show the <b>2026 dates and fees</b>, with the <span style="color:var(--accent);font-weight:600">expected 2027 window</span> in blue. Fees may rise slightly. Always confirm on the organiser's site. Tap a competition's name or its button to open the official page.</p>
 
   <div class="filters" role="group" aria-label="Filter competitions">
     <button type="button" id="f-all" data-c="all" aria-pressed="true">All</button>
@@ -207,6 +207,7 @@ footer .copy{font-family:var(--display);font-weight:800;font-size:16px;color:var
       <div><dt>Categories</dt><dd>Pre-Ecolier (Y1–2) · Ecolier (Y3–4) · Benjamin (Y5–6)</dd></div>
       <div><dt>Entry</dt><dd>Individual, registered only through a school or tuition centre</dd></div>
     </dl>
+    <p class="note">The organiser says the 2026 Kangaroo, Kancil and Beaver contests were recognised for PAJSK national-level participation. No KPM letter seen yet.</p>
   <a class="go" href="https://www.kangaroomath.com.my/" target="_blank" rel="noopener">Open official page: kangaroomath.com.my <span aria-hidden="true">↗</span></a>
   </article>
 
@@ -248,14 +249,14 @@ footer .copy{font-family:var(--display);font-weight:800;font-size:16px;color:var
 
   <article class="card" data-c="math" data-status="wait">
     <div class="chead"><div class="subj">Maths</div><h3><a class="title" href="https://imo-malaysia.org/imonst1/" target="_blank" rel="noopener">IMONST 1</a></h3><div class="org">IMO Malaysia national selection test · online</div></div>
-    <div class="chips"><span class="chip wait">2026 KPM reply pending</span></div>
+    <div class="chips"><span class="chip wait">2026 KPM reply pending</span><span class="chip info">2027 dates confirmed</span></div>
     <dl>
-      <div><dt>When</dt><dd>2026: early bird 21 Jan to 1 May; closes 14 Aug; test 28 Aug.<span class="y27">2027: registration about Jan–Aug, test about late Aug.</span></dd></div>
-      <div><dt>Fee</dt><dd class="num">RM45 early bird · RM50 normal</dd></div>
+      <div><dt>When</dt><dd>2027 (confirmed): early bird to 1 May; normal to 5 Jul; test 6 &amp; 8 Aug, online.<span class="y27">2026 for reference: closed 14 Aug, test 28 Aug.</span></dd></div>
+      <div><dt>Fee</dt><dd class="num">2027 (confirmed): RM45 early bird · RM50 normal</dd></div>
       <div><dt>Categories</dt><dd>Beginner (age 9 and under) · Pioneer (10–12)</dd></div>
       <div><dt>Entry</dt><dd>Individual</dd></div>
     </dl>
-    <p class="note">Eligible for PAJSK under a 2024 KPM letter. KPM had not replied to the 2026 report as of 29 Oct 2026.</p>
+    <p class="note">Eligible for PAJSK under a 2024 KPM letter. KPM had not replied to the 2026 report as of 29 Oct 2026. The organiser says 2027 entrants will be eligible.</p>
   <a class="go" href="https://imo-malaysia.org/imonst1/" target="_blank" rel="noopener">Open official page: imo-malaysia.org <span aria-hidden="true">↗</span></a>
   </article>
 
@@ -312,9 +313,9 @@ footer .copy{font-family:var(--display);font-weight:800;font-size:16px;color:var
     <div class="chead"><div class="subj">English</div><h3><a class="title" href="https://english.edu.my" target="_blank" rel="noopener">Hippo, EsBee, SIL &amp; TeenEagle</a></h3><div class="org">Registered through english.edu.my</div></div>
     <div class="chips"><span class="chip good">Hippo, EsBee, SIL had PAJSK</span></div>
     <dl>
-      <div><dt>When</dt><dd>2026: TeenEagle 6–8 Feb · Hippo 13–15 Mar · EsBee 24–26 Apr · SIL 16 May.<span class="y27">2027: similar Feb–May slots; early bird from about Nov–Dec 2026.</span></dd></div>
-      <div><dt>Fee</dt><dd>Not confirmed. Check the site.</dd></div>
-      <div><dt>Categories</dt><dd>Level bands by year group</dd></div>
+      <div><dt>When</dt><dd>2027 (confirmed): TeenEagle 19–21 Feb (register by 7 Feb) · Hippo 2–4 Apr (by 19 Mar) · ESBee 30 Apr–2 May (registration 1 Dec 2026 to 15 Apr) · SIL 15 May (by 7 May).</dd></div>
+      <div><dt>Fee</dt><dd>2027 fees not published yet. Check the site.</dd></div>
+      <div><dt>Categories</dt><dd>Level bands by year group. ESBee: Bee 1 (Y1–2), Bee 2 (Y3–4), Bee 3 (Y5–6).</dd></div>
       <div><dt>Entry</dt><dd>Individual</dd></div>
     </dl>
     <p class="note">TeenEagle was new in 2026; its PAJSK status was still unconfirmed.</p>
@@ -376,12 +377,12 @@ footer .copy{font-family:var(--display);font-weight:800;font-size:16px;color:var
 
 <section aria-labelledby="cal">
   <h2 id="cal">A 2027 planner</h2>
-  <p class="sec-sub">Expected dates, based on how each competition ran in 2026. School reopens on 4 Jan 2027.</p>
+  <p class="sec-sub">Confirmed 2027 dates where published; the rest are expected, based on how each competition ran in 2026. School reopens on 4 Jan 2027.</p>
   <div class="cal">
-    <div class="mon"><h3>Nov–Dec 2026</h3><ul><li>Kangaroo, Kancil, Beaver early bird</li><li>English contests early bird</li><li>MIIX and IRISE open</li></ul></div>
-    <div class="mon"><h3>Jan–Mar 2027</h3><ul><li>IMONST early bird opens</li><li>IRISE closes about 28 Jan</li><li>SRMC registration (Feb–Apr)</li><li>Hippo and TeenEagle</li><li>Kangaroo registration closes early Mar</li></ul></div>
-    <div class="mon"><h3>Apr–Jun 2027</h3><ul><li>Kangaroo Math (Apr)</li><li>EsBee, SIL, MIIX deadline (Apr–May)</li><li>Beaver (May), Kancil (Jun)</li><li>Explorer series early bird</li><li>Mid-year break about 22 May – 6 Jun</li></ul></div>
-    <div class="mon"><h3>Jul–Sep 2027</h3><ul><li>NRC and language contests: state rounds</li><li>Coolest Projects submissions</li><li>IMONST 1 (late Aug)</li></ul></div>
+    <div class="mon"><h3>Nov–Dec 2026</h3><ul><li>Kangaroo, Kancil, Beaver early bird (expected)</li><li>ESBee registration opens 1 Dec</li><li>MIIX and IRISE open</li></ul></div>
+    <div class="mon"><h3>Jan–Mar 2027</h3><ul><li>IRISE closes 28 Jan</li><li>TeenEagle 19–21 Feb (register by 7 Feb)</li><li>SRMC registration (Feb–Apr)</li><li>Kangaroo registration closes early Mar</li><li>Hippo registration closes 19 Mar</li></ul></div>
+    <div class="mon"><h3>Apr–Jun 2027</h3><ul><li>Hippo 2–4 Apr; Kangaroo Math (Apr)</li><li>ESBee 30 Apr–2 May; MIIX closes 30 Apr; SIL 15 May</li><li>IMONST early bird ends 1 May</li><li>Beaver (May), Kancil (Jun)</li><li>Explorer series early bird</li><li>Mid-year break about 22 May – 6 Jun</li></ul></div>
+    <div class="mon"><h3>Jul–Sep 2027</h3><ul><li>NRC and language contests: state rounds</li><li>Coolest Projects submissions</li><li>IMONST registration closes 5 Jul; test 6 &amp; 8 Aug</li></ul></div>
     <div class="mon"><h3>Oct–Dec 2027</h3><ul><li>Explorer series contests (Oct)</li><li>Kidslympic Games (Oct)</li><li>NRC national (Nov)</li><li>PAJSK records close at year end</li></ul></div>
   </div>
 </section>
@@ -395,6 +396,12 @@ footer .copy{font-family:var(--display);font-weight:800;font-size:16px;color:var
     <li><a href="https://contesthub.my/">ContestHub: Kangaroo, Kancil, Beaver, Explorer</a></li>
     <li><a href="https://www.kangaroomath.com.my/faqs/">Kangaroo Math Malaysia FAQ</a></li>
     <li><a href="https://imo-malaysia.org/imonst1/">IMO Malaysia: IMONST 1</a></li>
+    <li><a href="https://contesthub.my/register">ContestHub: IMONST 1 2027 dates and fees</a></li>
+    <li><a href="https://t.me/s/OfficialBeaverMalaysia">Beaver Malaysia: 2026 PAJSK recognition post</a></li>
+    <li><a href="https://english.edu.my/teeneagle.html">english.edu.my: TeenEagle 2027</a></li>
+    <li><a href="https://english.edu.my/hippo.html">english.edu.my: Hippo 2027</a></li>
+    <li><a href="https://english.edu.my/esb.html">english.edu.my: ESBee 2027</a></li>
+    <li><a href="https://english.edu.my/sil.html">english.edu.my: SIL 2027</a></li>
     <li><a href="https://ssdmalaysia.com/programs">SSD: SRMC</a></li>
     <li><a href="https://wpsls.sasbadi.com/index.php/author/sls/">Sasbadi: NRC 2026</a></li>
     <li><a href="https://www.spmujpnk.my/index.php">JPN Kedah: event calendar</a></li>
